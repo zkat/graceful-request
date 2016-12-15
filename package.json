@@ -1,6 +1,6 @@
 {
   "name": "graceful-request",
-  "version": "1.0.0",
+  "version": "2.79.0",
   "description": "Do whatever request does, but gracefully",
   "main": "index.js",
   "scripts": {
