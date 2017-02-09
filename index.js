@@ -1,6 +1,4 @@
-module.exports = require(
-  'require-inject'
-).installGlobally.andClearCache('request', {
+module.exports = require('require-inject')('request', {
   hawk: require('./lib/hawk'),
   'aws-sign2': require('./lib/aws-sign2'),
   aws4: require('./lib/aws4'),
@@ -12,5 +10,6 @@ module.exports = require(
   'request/lib/auth': require('./lib/auth'),
   'request/lib/oauth': require('./lib/oauth'),
   'request/lib/multipart': require('./lib/multipart'),
-  'request/lib/tunnel': require('./lib/tunnel')
+  'request/lib/tunnel': require('./lib/tunnel'),
+  'request/request': require('./lib/request')
 })
